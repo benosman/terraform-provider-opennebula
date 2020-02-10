@@ -815,7 +815,7 @@ func waitForVmState(d *schema.ResourceData, meta interface{}, state string) (int
 				return vm, "anythingelse", nil
 			}
 		},
-		Timeout:    3 * time.Minute,
+		Timeout:    10 * time.Minute,
 		Delay:      10 * time.Second,
 		MinTimeout: 3 * time.Second,
 	}
